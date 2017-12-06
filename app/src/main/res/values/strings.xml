@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">EWS</string>
+
+    <string name="river">River</string>
+    <string name="station_name">Station Name</string>
+    <string name="water_level">Water Level</string>
+
+    <string name="color_stripe">Color Stripe</string>
+    <string name="status_icon">Status Icon</string>
+    <string name="reading_time">Reading Time</string>
+    <string name="danger_level">Danger Level</string>
+    <string name="warning_level">Warning Level</string>
+
+    <string name="no_value">N/A</string>
+</resources>
