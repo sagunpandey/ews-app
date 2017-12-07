@@ -12,4 +12,6 @@
     <string name="warning_level">Warning Level</string>
 
     <string name="no_value">N/A</string>
+
+    <string name="settings">Settings</string>
 </resources>

@@ -1,17 +1,22 @@
 package com.sagunpandey.ews;
 
+import android.app.Activity;
 import android.app.job.JobInfo;
 import android.app.job.JobScheduler;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.sagunpandey.ews.core.EWSApplication;
 import com.sagunpandey.ews.core.EWSService;
 import com.sagunpandey.ews.entities.River;
@@ -29,7 +34,7 @@ import javax.inject.Inject;
 import static com.sagunpandey.ews.flux.store.DataStore.STORE_CHANGE_RIVERS;
 import static com.sagunpandey.ews.flux.store.DataStore.STORE_CHANGE_STATUSES;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends Activity {
 
 	private static final String TAG = "MainActivity";
 
@@ -53,6 +58,8 @@ public class MainActivity extends FragmentActivity {
 		setContentView(R.layout.activity_main);
 
 		EWSApplication.getApplication().getAppComponent().inject(this);
+
+		FirebaseMessaging.getInstance().subscribeToTopic("all");
 
 		swipeRefreshLayout = findViewById(R.id.swipeToRefresh);
 		swipeRefreshLayout.setColorSchemeResources(android.R.color.holo_blue_bright);
@@ -83,6 +90,28 @@ public class MainActivity extends FragmentActivity {
 		super.onResume();
 		dispatcher.register(this);
 		dispatcher.register(store);
+
+		cancelJobs();
+		scheduleJob();
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.menu_main, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+			case R.id.settings:
+				Intent intent = new Intent(this, SettingsActivity.class);
+				startActivity(intent);
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
+		}
 	}
 
 	@Subscribe

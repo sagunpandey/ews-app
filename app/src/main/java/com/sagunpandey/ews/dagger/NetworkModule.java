@@ -27,7 +27,7 @@ public class NetworkModule {
     @Provides
     @Named("serverUrl")
     String provideServerUrl() {
-        return "http://192.168.0.17:8080/";
+        return "http://10.0.2.2:3000/";
     }
 
     @Provides

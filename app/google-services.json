@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "277369950550",
+    "firebase_url": "https://ews-cloud-90609.firebaseio.com",
+    "project_id": "ews-cloud-90609",
+    "storage_bucket": "ews-cloud-90609.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277369950550:android:003807d5f543685d",
+        "android_client_info": {
+          "package_name": "com.sagunpandey.ews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277369950550-96mclpahpqrjtgs126f7tsphnp7f9pr6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAty5rspRYzS87wfDoggkQEV1ijlv56-RM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

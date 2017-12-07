@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="About">
+
+        <Preference
+            android:title="Early Warning System (EWS)"
+            android:summary="v1.0"
+            android:selectable="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>
