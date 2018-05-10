@@ -1,0 +1,137 @@
+{
+	"rivers": [
+		{
+			"id": 1,
+			"name": "River A",
+			"stations": [
+				{
+					"id": 1,
+					"riverId": 1,
+					"name": "Station A",
+					"longitude": "25.13",
+					"latitude": "82.99",
+					"code": "R1S1",
+					"dangerLevel": 15,
+					"warningLevel": 10
+				},
+				{
+					"id": 2,
+					"riverId": 1,
+					"name": "Station B",
+					"longitude": "25.13",
+					"latitude": "82.99",
+					"code": "R1S2",
+					"dangerLevel": 15,
+					"warningLevel": 10
+				},
+				{
+					"id": 3,
+					"riverId": 1,
+					"name": "Station C",
+					"longitude": "25.13",
+					"latitude": "82.99",
+					"code": "R1S3",
+					"dangerLevel": 15,
+					"warningLevel": 10
+				},
+				{
+					"id": 4,
+					"riverId": 1,
+					"name": "Station D",
+					"longitude": "25.13",
+					"latitude": "82.99",
+					"code": "R1S4",
+					"dangerLevel": 15,
+					"warningLevel": 10
+				},
+				{
+					"id": 5,
+					"riverId": 1,
+					"name": "Station E",
+					"longitude": "25.13",
+					"latitude": "82.99",
+					"code": "R1S5",
+					"dangerLevel": 15,
+					"warningLevel": 10
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "River B",
+			"stations": [
+				{
+					"id": 6,
+					"riverId": 2,
+					"name": "Station F",
+					"longitude": "25.13",
+					"latitude": "82.99",
+					"code": "R2S6",
+					"dangerLevel": 15,
+					"warningLevel": 10
+				},
+				{
+					"id": 7,
+					"riverId": 2,
+					"name": "Station G",
+					"longitude": "25.13",
+					"latitude": "82.99",
+					"code": "R2S7",
+					"dangerLevel": 15,
+					"warningLevel": 10
+				}
+			]
+		}
+	],
+	"status": [
+		{
+			"stationId": 1,
+			"trend": "RISING",
+			"alarm": "WARNING",
+			"waterLevel": 5,
+			"readTime": "2011-10-26T20:29:59-07:00"
+		},
+		{
+			"stationId": 2,
+			"trend": "FALLING",
+			"alarm": "UNKNOWN",
+			"waterLevel": 5,
+			"readTime": "2011-10-26T20:29:59-07:00"
+		},
+		{
+			"stationId": 3,
+			"trend": "STEADY",
+			"alarm": "SAFE",
+			"waterLevel": 5,
+			"readTime": "2011-10-26T20:29:59-07:00"
+		},
+		{
+			"stationId": 4,
+			"trend": "UNKNOWN",
+			"alarm": "WARNING",
+			"waterLevel": 5,
+			"readTime": "2011-10-26T20:29:59-07:00"
+		},
+		{
+			"stationId": 5,
+			"trend": "RISING",
+			"alarm": "DANGER",
+			"waterLevel": 5,
+			"readingTime": "2011-10-26T20:29:59-07:00"
+		},
+		{
+			"stationId": 6,
+			"trend": "FALLING",
+			"alarm": "SAFE",
+			"waterLevel": 5,
+			"readTime": "2011-10-26T20:29:59-07:00"
+		},
+		{
+			"stationId": 7,
+			"trend": "SAFE",
+			"alarm": "WARNING",
+			"waterLevel": 5,
+			"readTime": "2011-10-26T20:29:59-07:00"
+		}
+	]
+}
